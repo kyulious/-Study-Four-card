@@ -1,0 +1,350 @@
+@import url('https://fonts.google.com/specimen/Poppins');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(247, 247, 247);
+    font-family: 'Poppins', sans-serif;
+}
+.gallery #title{
+    text-align: center;
+    top: 10%;
+    position: absolute;
+    left: 40%;
+    width: 400px;
+    color: gray;
+    font-weight: lighter;
+}
+.gallery #title2{
+    position: absolute;
+    font-weight: bold;
+    top: 15%;
+    left: 41%;
+    width: 400px;
+}
+.gallery #subtitle{
+    position: absolute;
+    top: 22%;
+    left: 39%;
+    width: 450px;
+    text-align: center;
+    font-size: 14px;
+    color: rgb(211, 211, 211);
+}
+
+/*box1번*/
+.gallery #box1{
+    border-top:5px solid mediumspringgreen ;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    border-left: 1px solid rgb(233, 233, 233);
+    border-right: 1px solid rgb(233, 233, 233);
+    width: 18%;
+    height: 25vh;
+    border-radius:1%;
+    box-shadow: 1px 0px 10px 5px rgb(240, 240, 240), -1px 0px 10px 5px rgb(240, 240, 240);
+    position: absolute;
+    top: 46%;
+    left: 21%;
+    background-color: rgba(255, 255, 255, 0.986);
+    
+}
+.gallery #box1>h3{
+    position: relative;
+    top: 15%;
+    left: 10%;
+}
+.gallery #box1>div{
+    position: relative;
+    top: 20%;
+    left: 10%;
+    font-size: 13px;
+    color: grey;
+}
+.gallery #box1>img{
+    width: inherit;
+    position: relative;
+    top: 40%;
+    left: 70%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/*box2번*/
+.gallery #box2{
+    border-top:5px solid rgb(240, 59, 3) ;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    border-left: 1px solid rgb(233, 233, 233);
+    border-right: 1px solid rgb(233, 233, 233);
+    width: 18%;
+    height: 25vh;
+    border-radius:1%;
+    box-shadow: 1px 0px 10px 5px rgb(240, 240, 240), -1px 0px 10px 5px rgb(240, 240, 240);
+    position: absolute;
+    top: 30%;
+    left: 41%;
+    background-color: rgba(255, 255, 255, 0.986);
+}
+.gallery #box2>h3{
+    position: relative;
+    top: 15%;
+    left: 10%;
+}
+.gallery #box2>div{
+    position: relative;
+    top: 20%;
+    left: 10%;
+    font-size: 13px;
+    color: grey;
+}
+.gallery #box2>img{
+    position: relative;
+    top: 40%;
+    left: 70%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: inherit;
+}
+
+
+/*box3번*/
+.gallery #box3{
+    border-top:5px solid rgb(255, 186, 39) ;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    border-left: 1px solid rgb(233, 233, 233);
+    border-right: 1px solid rgb(233, 233, 233);
+    width: 18%;
+    height: 25vh;
+    border-radius:1%;
+    box-shadow: 1px 0px 10px 5px rgb(240, 240, 240), -1px 0px 10px 5px rgb(240, 240, 240);
+    position: absolute;
+    top: 60%;
+    left: 41%;
+    background-color: rgba(255, 255, 255, 0.986);
+}
+.gallery #box3>h3{
+    position: relative;
+    top: 15%;
+    left: 10%;
+}
+.gallery #box3>div{
+    position: relative;
+    top: 20%;
+    left: 10%;
+    font-size: 13px;
+    color: grey;
+}
+.gallery #box3>img{
+    position: relative;
+    top: 40%;
+    left: 70%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: inherit;
+}
+
+
+/*box4번*/
+.gallery #box4{
+    border-top:5px solid rgb(38, 125, 255) ;
+    border-bottom: 1px solid rgb(233, 233, 233);
+    border-left: 1px solid rgb(233, 233, 233);
+    border-right: 1px solid rgb(233, 233, 233);
+    width: 18%;
+    height: 25vh;
+    border-radius:1%;
+    box-shadow: 1px 0px 10px 5px rgb(240, 240, 240), -1px 0px 10px 5px rgb(240, 240, 240);
+    position: absolute;
+    top: 46%;
+    right: 21%;
+    background-color: rgba(255, 255, 255, 0.986);
+}
+.gallery #box4>h3{
+    position: relative;
+    top: 15%;
+    left: 10%;
+}
+.gallery #box4>div{
+    position: relative;
+    top: 20%;
+    left: 10%;
+    font-size: 13px;
+    color: grey;
+}
+.gallery #box4>img{
+    position: relative;
+    top: 40%;
+    left: 70%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    width: inherit;
+}
+
+footer{
+    position: absolute;
+    bottom: 10%;
+    display: none;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+
+/*mobie view*/
+@media screen and (max-width: 375px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;
+    }
+    .gallery{
+        background-color: #fff;
+    }
+    .gallery #title{
+        text-align: center;
+        position: relative;
+        left: 20%;
+        margin-top: 20%;
+    }
+    .gallery #title2{
+        text-align: center;
+        position: relative;
+        left: 20%;
+        margin-top: 4%;
+    }
+    .gallery #subtitle{
+        width: 280px;
+    }
+    
+    /*box1번 모바일*/
+    .gallery #box1{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 30%;
+        width: 300px;
+        left: 20%;
+    }
+    .gallery #box1>h3{
+        position: relative;
+        top: 10%;
+        left: 10%;
+    }
+    .gallery #box1>div{
+        position: relative;
+        top: 20%;
+        left: 10%;
+        font-size: 13px;
+        color: grey;
+    }
+    .gallery #box1>img{
+        position: relative;
+        max-width: 70px;
+        max-height: 70px;
+        top: 30%;
+        left: 70%;
+    }
+
+
+    /*box2번 모바일*/
+    .gallery #box2{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60%;
+        width: 300px;
+        left: 20%;
+    }
+    .gallery #box2>h3{
+        position: relative;
+        top: 10%;
+        left: 10%;
+    }
+    .gallery #box2>div{
+        position: relative;
+        top: 20%;
+        left: 10%;
+        font-size: 13px;
+        color: grey;
+    }
+    .gallery #box2>img{
+        position: relative;
+        max-width: 70px;
+        max-height: 70px;
+        top: 30%;
+        left: 70%;
+    }
+
+
+    /*box3번 모바일*/
+    .gallery #box3{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 90%;
+        width: 300px;
+        left: 20%;
+    }
+    .gallery #box3>h3{
+        position: relative;
+        top: 10%;
+        left: 10%;
+    }
+    .gallery #box3>div{
+        position: relative;
+        top: 20%;
+        left: 10%;
+        font-size: 13px;
+        color: grey;
+    }
+    .gallery #box3>img{
+        position: relative;
+        max-width: 70px;
+        max-height: 70px;
+        top: 30%;
+        left: 70%;
+    }
+
+    
+    /*box4번 모바일*/
+    .gallery #box4{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 120%;
+        width: 300px;
+        left: 20%;
+    }
+    .gallery #box4>h3{
+        position: relative;
+        top: 10%;
+        left: 10%;
+    }
+    .gallery #box4>div{
+        position: relative;
+        top: 20%;
+        left: 10%;
+        font-size: 13px;
+        color: grey;
+    }
+    .gallery #box4>img{
+        position: relative;
+        max-width: 70px;
+        max-height: 70px;
+        top: 30%;
+        left: 70%;
+    }
+    footer{
+        display: none;
+    }
+}
